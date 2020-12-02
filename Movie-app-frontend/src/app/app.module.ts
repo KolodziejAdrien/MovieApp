@@ -3,13 +3,18 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { MoviesComponent } from './movies/movies.component';
-
+import { TopRatedMovieComponent } from './movies/top-rated-movie/top-rated-movie.component';
+import { PopularMovieComponent } from './movies/popular-movie/popular-movie.component';
+import { LatestMovieComponent } from './movies/latest-movie/latest-movie.component';
+import { MovieComponent } from './movies/movie/movie.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    MoviesComponent,
+    TopRatedMovieComponent,
+    PopularMovieComponent,
+    LatestMovieComponent,
+    MovieComponent,
   ],
   imports: [
     BrowserModule,
