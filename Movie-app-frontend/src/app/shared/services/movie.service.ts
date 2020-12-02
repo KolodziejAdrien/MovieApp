@@ -15,6 +15,7 @@ export class MovieService {
   API_KEY = environment.API_KEY;
   body: any;
   err: any;
+  url = this.API_BASE + 'movie/popular';
 
   constructor(private http: HttpClient) { }
 
@@ -27,7 +28,8 @@ export class MovieService {
 
 
   getPopularMovies(): Observable<Movies[]> {
-    return this.http.get<Movies[]>('${this.API_BASE}movie/popular', this.formatParams());
+    // return this.http.get<Movies[]>('${this.API_BASE}movie/popular', this.formatParams());
+    return this.http.get<Movies[]>(this.url, this.formatParams());
   }
 
   private handleError(error: Response | any) {
