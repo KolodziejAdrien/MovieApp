@@ -1,2 +1,2 @@
 # MovieApp
-Angular / node web app based on a movie api
+Angular web app based on tmdb movie api
