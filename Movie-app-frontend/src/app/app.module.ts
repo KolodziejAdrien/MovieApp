@@ -1,21 +1,24 @@
 import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
+import { ModuleWithProviders, NgModule } from '@angular/core';
 import { CommonModule } from "@angular/common";
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { TopRatedMovieComponent } from './movies/top-rated-movie/top-rated-movie.component';
-import { PopularMovieComponent } from './movies/popular-movie/popular-movie.component';
-import { LatestMovieComponent } from './movies/latest-movie/latest-movie.component';
-import { MovieComponent } from './movies/movie/movie.component';
 import { HttpClientModule } from '@angular/common/http';
+import { MoviesComponent } from './movies/movies.component';
+import { MovieComponent } from './movies/movie/movie.component';
+
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
+/* SHARED */
+import { SharedModule } from './shared/shared.module';
+
+
 
 @NgModule({
   declarations: [
     AppComponent,
-    TopRatedMovieComponent,
-    PopularMovieComponent,
-    LatestMovieComponent,
+    MoviesComponent,
     MovieComponent,
   ],
   imports: [
@@ -23,9 +26,10 @@ import { HttpClientModule } from '@angular/common/http';
     CommonModule,
     AppRoutingModule,
     HttpClientModule,
-
+    BrowserAnimationsModule,
+    SharedModule.forRoot(),
   ],
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {}
