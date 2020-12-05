@@ -19,13 +19,13 @@ export class PopularMovieComponent implements OnInit {
   constructor(private movieService : MovieService) { }
 
   ngOnInit(): void {
-    this.getMovies();
+    // this.getMovies();
   }
 
   getMovies () {
-    this.movieService.getPopularMovies().subscribe((response) => {
-    this.popularMovies = response});
-    console.log(this.popularMovies);
+    // this.movieService.getPopularMovies().subscribe((response) => {
+    // this.popularMovies = response});
+    // console.log(this.popularMovies);
   }
 
 }
