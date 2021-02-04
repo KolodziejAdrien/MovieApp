@@ -6,10 +6,16 @@ import { AppComponent } from './app.component';
 import { AuthModule } from './auth/auth.module';
 import { CoreModule } from './core/core.module';
 import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
+import { MoviesComponent } from './movies/movies.component';
+import { MovieListComponent } from './movies/movie-list/movie-list.component';
+import { MovieComponent } from './movies/movie/movie.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    MoviesComponent,
+    MovieListComponent,
+    MovieComponent,
   ],
   imports: [
     BrowserModule,
