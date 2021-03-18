@@ -1,0 +1,23 @@
+header {
+  background-color: pink;
+  width: 100%;
+  min-height: 8vh;
+	padding: 1em;
+}
+
+.brand {
+  float: left;
+}
+
+.navlist{
+  float: right;
+}
+
+
+ul {
+  display: flex;
+  flex-direction: row;
+  gap: 2em;
+  margin: 0 auto;
+  line-height: 1.6;
+}

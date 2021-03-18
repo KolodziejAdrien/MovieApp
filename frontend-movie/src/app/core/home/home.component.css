@@ -1,0 +1,14 @@
+.container{
+  flex-direction: column;
+  gap: 2em;
+}
+.movie-box{
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.movie-item{
+  background: chartreuse;
+}

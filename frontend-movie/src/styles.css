@@ -1,1 +1,69 @@
-/* You can add global styles to this file, and also import other style files */
+:root{
+	--ff-title: 'Lobster', sans-serif;
+
+	--clr-primary-200: #cbecf5;
+	--clr-primary-300: #ff5858;
+	--clr-primary-400: #cc2e5d;
+
+	--clr-linear-500: linear-gradient(143deg, rgba(252,111,111,1) 0%, rgba(255,88,88,1) 52%, rgba(204,46,93,1) 100%);
+
+	--clr-neutral-100: #f8f8f8;
+	--clr-neutral-500: rgb(129, 129, 129);
+	--clr-neutral-900: #161a19;
+}
+
+body {
+  height: 100vh;
+  position: relative;
+  font-weight: 400;
+	font-size: 1.3125rem;
+	line-height: 1.6;
+}
+
+*,
+*::before,
+*::after{
+  margin: 0;
+  box-sizing: border-box;
+  padding: 0;
+}
+
+a{
+  text-decoration: none;
+}
+
+li{
+  list-style: none;
+}
+.container{
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+h1,
+h2,
+h3{
+	line-height: 1;
+	font-weight: 900;
+}
+
+h2,
+h3,
+p{
+	margin-bottom: 1em;
+}
+
+img{
+	height: 100%;
+	width: 100%;
+	object-fit: cover;
+}
+
+.text-center{
+	text-align: center;
+}
+
+
